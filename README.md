@@ -7,12 +7,12 @@ UPlace is an iOS application that connects people in space-defined communities.
   - Feel free to contribute to it :)
   
  
-![Launch Screen](/wz366/UPlace/blob/master/Screenshots/Launch_image.png?raw=true)
-![Feed](/wz366/UPlace/blob/master/Screenshots/IMG_0209.PNG?raw=true)
-![New Post](/wz366/UPlace/blob/master/Screenshots/IMG_0214.PNG?raw=true)
-![Discover](/wz366/UPlace/blob/master/Screenshots/IMG_0213.PNG?raw=true)
-![Side Menu](/wz366/UPlace/blob/master/Screenshots/IMG_0211.PNG?raw=true)
-![Profile](/wz366/UPlace/blob/master/Screenshots/IMG_0249.PNG?raw=true)
+![Launch Screen](/Screenshots/Launch_image.png?raw=true)
+![Feed](/Screenshots/IMG_0209.PNG?raw=true)
+![New Post](/Screenshots/IMG_0214.PNG?raw=true)
+![Discover](/Screenshots/IMG_0213.PNG?raw=true)
+![Side Menu](/Screenshots/IMG_0211.PNG?raw=true)
+![Profile](/Screenshots/IMG_0249.PNG?raw=true)
 
 
 ### Version
@@ -32,4 +32,4 @@ License
 MIT
 
 
-**Keep Calm and Carry On!**
+**Keep Calm and Code!**
