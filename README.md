@@ -6,14 +6,12 @@ UPlace is an iOS application that connects people in space-defined communities.
   - See screenshots below for implemented parts
   - Feel free to contribute to it :)
   
- 
-![Launch Screen](/Screenshots/Launch_image.png?raw=true)
-![Feed](/Screenshots/IMG_0209.PNG?raw=true)
-![New Post](/Screenshots/IMG_0214.PNG?raw=true)
-![Discover](/Screenshots/IMG_0213.PNG?raw=true)
-![Side Menu](/Screenshots/IMG_0211.PNG?raw=true)
-![Profile](/Screenshots/IMG_0249.PNG?raw=true)
-
+ <img src="/Screenshots/Launch_image.png" alt="Launch Screen" width="300" height="534" />
+ <img src="/Screenshots/IMG_0209.PNG" alt="Feed" width="300" height="534" />
+ <img src="/Screenshots/IMG_0214.PNG" alt="New Post" width="300" height="534" />
+ <img src="/Screenshots/IMG_0213.PNG" alt="Discover" width="300" height="534" />
+ <img src="/Screenshots/IMG_0211.PNG" alt="Side Menu" width="300" height="534" />
+ <img src="/Screenshots/IMG_0249.PNG" alt="Profile" width="300" height="534" />
 
 ### Version
 0.4.2
@@ -21,6 +19,7 @@ UPlace is an iOS application that connects people in space-defined communities.
 ### Development
 
 Want to contribute? Great!
+Contact me if needed!
 
 ### Todo's
 
