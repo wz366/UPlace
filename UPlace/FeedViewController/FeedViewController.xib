@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedViewController">
+            <connections>
+                <outlet property="feedTableView" destination="hnQ-Na-25h" id="TXi-OW-J1p"/>
+                <outlet property="segmentedControl" destination="I7o-zB-rk3" id="2tO-oK-21o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="pvt-PO-oOx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="DS9-o8-v7A"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UPlace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8T-eb-GoU">
+                    <rect key="frame" x="132" y="22" width="111" height="38"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I7o-zB-rk3">
+                    <rect key="frame" x="71" y="63" width="233" height="29"/>
+                    <segments>
+                        <segment title="Nearby"/>
+                        <segment title="Following"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="segmentedControlValueChanged:" destination="-1" eventType="valueChanged" id="alb-lp-yZl"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPG-kO-fV4">
+                    <rect key="frame" x="8" y="26" width="30" height="30"/>
+                    <state key="normal" image="Menu_vector.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showLeftMenu:" destination="-1" eventType="touchUpInside" id="tZR-4k-pAs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhR-3e-ROW">
+                    <rect key="frame" x="337" y="26" width="30" height="30"/>
+                    <state key="normal" image="Plus_vector.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="newPost:" destination="-1" eventType="touchUpInside" id="pbi-h6-H4d"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSg-bz-H6X">
+                    <rect key="frame" x="299" y="26" width="30" height="30"/>
+                    <state key="normal" image="Search_vector.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="searchPlaces:" destination="-1" eventType="touchUpInside" id="Vrp-wn-RrE"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hnQ-Na-25h">
+                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hnQ-Na-25h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6aG-T9-Iha"/>
+                <constraint firstItem="pvt-PO-oOx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8tB-cQ-SGT"/>
+                <constraint firstAttribute="trailing" secondItem="pvt-PO-oOx" secondAttribute="trailing" id="L1M-wM-DJJ"/>
+                <constraint firstItem="hnQ-Na-25h" firstAttribute="top" secondItem="pvt-PO-oOx" secondAttribute="bottom" id="QOy-jP-i0f"/>
+                <constraint firstAttribute="bottom" secondItem="hnQ-Na-25h" secondAttribute="bottom" id="SSY-vf-y6J"/>
+                <constraint firstAttribute="trailing" secondItem="hnQ-Na-25h" secondAttribute="trailing" id="cWD-Tf-9Nq"/>
+                <constraint firstItem="pvt-PO-oOx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="phs-Fh-Q6T"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="230.5" y="342.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background.png" width="50" height="50"/>
+        <image name="Menu_vector.png" width="20" height="20"/>
+        <image name="Plus_vector.png" width="20" height="20"/>
+        <image name="Search_vector.png" width="20" height="20"/>
+    </resources>
+</document>

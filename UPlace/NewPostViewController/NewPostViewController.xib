@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPostViewController">
+            <connections>
+                <outlet property="messageTextView" destination="l3r-4R-LDt" id="BL4-di-Jwl"/>
+                <outlet property="photoWallView" destination="MVv-M1-1pi" id="eHU-5U-zYR"/>
+                <outlet property="postLocationPlaceNameLabel" destination="XVY-nR-ixC" id="DLV-eg-EsA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="8mF-Y5-pad">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="MgQ-Wi-wFe"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it7-05-RJT">
+                    <rect key="frame" x="8" y="21" width="30" height="30"/>
+                    <state key="normal" image="Cancel_vector.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelPost:" destination="-1" eventType="touchUpInside" id="CLG-qQ-nSf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFC-aP-Tvu">
+                    <rect key="frame" x="337" y="21" width="30" height="30"/>
+                    <state key="normal" image="Confirm_vector.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmPost:" destination="-1" eventType="touchUpInside" id="zzA-Qs-xcI"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coffman Memorial Union" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-nR-ixC">
+                    <rect key="frame" x="8" y="49" width="359" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l3r-4R-LDt" customClass="TQTextView">
+                    <rect key="frame" x="8" y="88" width="359" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="crW-vb-Baa"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seperator.png" translatesAutoresizingMaskIntoConstraints="NO" id="L0n-aY-BGv">
+                    <rect key="frame" x="8" y="246" width="359" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Wau-f0-h5h"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVv-M1-1pi">
+                    <rect key="frame" x="8" y="255" width="359" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="dx5-92-WvG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="L0n-aY-BGv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="19h-eF-P5m"/>
+                <constraint firstItem="l3r-4R-LDt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1nb-O3-do3"/>
+                <constraint firstItem="8mF-Y5-pad" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9v4-BC-3GH"/>
+                <constraint firstItem="MVv-M1-1pi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Kf4-j8-NnC"/>
+                <constraint firstItem="l3r-4R-LDt" firstAttribute="top" secondItem="8mF-Y5-pad" secondAttribute="bottom" constant="8" id="L5W-Mx-dQn"/>
+                <constraint firstAttribute="trailing" secondItem="l3r-4R-LDt" secondAttribute="trailing" constant="8" id="S1N-3x-fNS"/>
+                <constraint firstItem="L0n-aY-BGv" firstAttribute="top" secondItem="l3r-4R-LDt" secondAttribute="bottom" constant="8" id="YQT-EA-6MN"/>
+                <constraint firstItem="8mF-Y5-pad" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aKj-Th-MSJ"/>
+                <constraint firstAttribute="trailing" secondItem="L0n-aY-BGv" secondAttribute="trailing" constant="8" id="gcg-z8-2rg"/>
+                <constraint firstAttribute="trailing" secondItem="MVv-M1-1pi" secondAttribute="trailing" constant="8" id="igH-Hk-gdz"/>
+                <constraint firstAttribute="trailing" secondItem="8mF-Y5-pad" secondAttribute="trailing" id="qhN-zh-De4"/>
+                <constraint firstItem="MVv-M1-1pi" firstAttribute="top" secondItem="L0n-aY-BGv" secondAttribute="bottom" constant="8" id="vMr-Eb-xaR"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="279.5" y="311.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background.png" width="50" height="50"/>
+        <image name="Cancel_vector.png" width="20" height="20"/>
+        <image name="Confirm_vector.png" width="24" height="20"/>
+        <image name="Seperator.png" width="100" height="16"/>
+    </resources>
+</document>
