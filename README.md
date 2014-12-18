@@ -64,6 +64,7 @@ That's it!
  - Notification view
  - Post detail/comment view
  - User registration
+ - Users should be able to upload profile pictures and cover photos
  - Push notification
  - Thumbnail images (should load thumbnails first instead of original images)
  - Comment model
